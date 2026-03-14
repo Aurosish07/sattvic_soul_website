@@ -1,0 +1,23 @@
+# Sattvic Soul Foundation - robots.txt
+# Allow search engines to crawl all pages
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /our-work.html
+Allow: /gallery.html
+Allow: /contact.html
+Allow: /styles.css
+Allow: /script.js
+Allow: /images/
+
+# Disallow admin or private areas (none in this case)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://www.sattvicsoul.org/sitemap.xml
+
+# Crawl delay (be respectful)
+Crawl-delay: 1

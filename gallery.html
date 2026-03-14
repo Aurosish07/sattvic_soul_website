@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery - Sattvic Soul Foundation's photo gallery showcasing our community projects and initiatives">
+    <title>Gallery - Sattvic Soul Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/SATTVIC Soul.png" alt="Sattvic Soul Foundation Logo" class="logo-image">
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="our-work.html">Our Work</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, #2d4a7c 0%, #4a6fa5 100%);">
+        <h1>Our Gallery</h1>
+        <p>Visual Journey of Our Community Impact</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="environment">Environment</button>
+                <button class="filter-btn" data-filter="health">Health</button>
+                <button class="filter-btn" data-filter="women">Women Empowerment</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-full-grid" id="galleryGrid">
+                <!-- Education Images -->
+                <div class="gallery-image" data-category="education">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80" alt="Students reading books in classroom">
+                    <div class="image-overlay">
+                        <h4>Literacy Program</h4>
+                        <p>Children receiving books and educational materials</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="education">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80" alt="Students studying together in classroom">
+                    <div class="image-overlay">
+                        <h4>Classroom Learning</h4>
+                        <p>Quality education access in rural schools</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="education">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80" alt="Computer training for children">
+                    <div class="image-overlay">
+                        <h4>Digital Skills Training</h4>
+                        <p>Computer literacy program for students</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="education">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80" alt="Teacher with students in classroom">
+                    <div class="image-overlay">
+                        <h4>Teacher Development</h4>
+                        <p>Training educators to improve teaching methods</p>
+                    </div>
+                </div>
+
+                <!-- Environment Images -->
+                <div class="gallery-image" data-category="environment">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80" alt="Volunteers planting trees">
+                    <div class="image-overlay">
+                        <h4>Reforestation Drive</h4>
+                        <p>Planting native trees in deforested areas</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="environment">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80" alt="Cleaning plastic waste from environment">
+                    <div class="image-overlay">
+                        <h4>Clean-Up Campaign</h4>
+                        <p>Community waste collection and recycling initiative</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="environment">
+                    <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&q=80" alt="Water conservation well project">
+                    <div class="image-overlay">
+                        <h4>Water Management</h4>
+                        <p>Rainwater harvesting and conservation projects</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="environment">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80" alt="Environmental awareness with children">
+                    <div class="image-overlay">
+                        <h4>Eco-Awareness Workshop</h4>
+                        <p>Teaching children about climate and sustainability</p>
+                    </div>
+                </div>
+
+                <!-- Health Images -->
+                <div class="gallery-image" data-category="health">
+                    <img src="https://images.unsplash.com/photo-1576765608622-067973a79f53?w=800&q=80" alt="Doctor checking patient at health camp">
+                    <div class="image-overlay">
+                        <h4>Free Medical Camp</h4>
+                        <p>Health screening and consultation services</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="health">
+                    <img src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=800&q=80" alt="Mother and child healthcare program">
+                    <div class="image-overlay">
+                        <h4>Mother-Child Care</h4>
+                        <p>Maternal and pediatric health services</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="health">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&q=80" alt="Nutrition education program">
+                    <div class="image-overlay">
+                        <h4>Nutrition Awareness</h4>
+                        <p>Teaching proper diet and healthy eating habits</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="health">
+                    <img src="https://images.unsplash.com/photo-1542996939-e6f0d5c082b3?w=800&q=80" alt="Sanitation and hygiene workshop">
+                    <div class="image-overlay">
+                        <h4>Hygiene Education</h4>
+                        <p>Sanitation awareness and clean water access</p>
+                    </div>
+                </div>
+
+                <!-- Women Empowerment Images -->
+                <div class="gallery-image" data-category="women">
+                    <img src="https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&q=80" alt="Women learning tailoring and sewing skills">
+                    <div class="image-overlay">
+                        <h4>Vocational Training</h4>
+                        <p>Tailoring and handicraft skill development</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="women">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" alt="Women in business meeting">
+                    <div class="image-overlay">
+                        <h4>Business Development</h4>
+                        <p>Supporting women-led micro enterprises</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="women">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Women's empowerment workshop">
+                    <div class="image-overlay">
+                        <h4>Leadership Workshop</h4>
+                        <p>Building confidence and leadership skills</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="women">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80" alt="Women community group meeting">
+                    <div class="image-overlay">
+                        <h4>Community Networks</h4>
+                        <p>Women supporting women through self-help groups</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" style="background: linear-gradient(135deg, #2d4a7c 0%, #4a6fa5 100%);">
+        <div class="container">
+            <h2>Be Part of Our Journey</h2>
+            <p>Join us in making a difference. Every contribution counts toward sustainable development.</p>
+            <a href="contact.html" class="cta-button" style="background: white; color: #2d4a7c;">Get Involved</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sattvic Soul Foundation</h4>
+                <p>A non-governmental and non-profit organization registered under Section 8 of the Companies Act of 2013</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="our-work.html">Our Work</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@sattvicsoul.org</p>
+                <p>Location: Odisha, India</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">i</a>
+                    <a href="#" class="social-icon">y</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sattvic Soul Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
