@@ -1,237 +1,809 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sattvic Soul Foundation - Promoting happiness, sustainability, and social development across 13+ states in India">
-    <title>Sattvic Soul Foundation - Environment & Social Development NGO</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+        content="Sattvic Soul Foundation — Sanjeevani for a little smile. Registered Section 8 non-profit NGO based in Bhubaneswar, Odisha, empowering communities through education, environment, healthcare, and women leadership.">
+    <title>Sattvic Soul Foundation — Sanjeevani for a Little Smile | Bhubaneswar, Odisha</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="images/SATTVIC Soul.png" alt="Sattvic Soul Foundation Logo" class="logo-image">
-            </div>
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+    <!-- Header & Global Sticky Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link" aria-label="Sattvic Soul Foundation Home">
+                <img src="images/SATTVIC Soul.png" alt="Sattvic Soul Foundation Logo" class="logo-img">
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
             </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="our-work.html">Our Work</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-carousel">
-            <div class="carousel-track">
-                <img src="./images/WhatsApp Image 2026-01-07 at 09.22.35.jpeg" alt="Environmental education" class="carousel-image active">
-                <img src="./images/WhatsApp Image 2026-01-25 at 23.51.15.jpeg" alt="Education programs" class="carousel-image">
-                <img src="./images/WhatsApp Image 2026-01-25 at 23.51.16.jpeg" alt="Healthcare services" class="carousel-image">
-                <img src="./images/WhatsApp Image 2026-01-25 at 23.52.58.jpeg" alt="Women empowerment" class="carousel-image">
-            </div>
-            <div class="carousel-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
+            <nav class="nav-menu" id="navMenu">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="our-work.html" class="nav-link">Our Work</a>
+                <a href="impact.html" class="nav-link">Impact</a>
+                <a href="get-involved.html" class="nav-link">Get Involved</a>
+                <a href="stories.html" class="nav-link">Stories</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="nav-actions">
+                    <a href="get-involved.html#donate" class="btn btn-warm">Donate</a>
+                </div>
+            </nav>
         </div>
-        <div class="hero-content">
-            <h1>Empowering Communities Since 2019</h1>
-            <p>Working across 13+ states in India to create lasting change through education, environment conservation, healthcare access, and women empowerment</p>
-            <a href="about.html" class="cta-button">Learn About Our Work</a>
-        </div>
-        <div class="hero-overlay"></div>
-    </section>
+    </header>
 
-    <!-- Mission Section -->
-    <section class="mission-section">
-        <div class="container">
-            <h2>Our Mission</h2>
-            <p class="section-subtitle">Bringing positive change to underprivileged communities</p>
-            <div class="mission-cards">
-                <div class="mission-card">
-                    <div class="card-icon">
-                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=200&h=200&fit=crop&q=80" alt="Environment Conservation">
-                    </div>
-                    <h3>Environment</h3>
-                    <p>Tree plantation drives, waste management programs, and water conservation projects in rural and urban areas</p>
-                </div>
-                <div class="mission-card">
-                    <div class="card-icon">
-                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=200&h=200&fit=crop&q=80" alt="Education Programs">
-                    </div>
-                    <h3>Education</h3>
-                    <p>Scholarships, digital literacy training, school infrastructure support, and teacher capacity building programs</p>
-                </div>
-                <div class="mission-card">
-                    <div class="card-icon">
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=200&h=200&fit=crop&q=80" alt="Healthcare Services">
-                    </div>
-                    <h3>Health</h3>
-                    <p>Free health camps, maternal care programs, nutrition awareness, and emergency medical assistance in underserved areas</p>
-                </div>
-                <div class="mission-card">
-                    <div class="card-icon">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&q=80" alt="Women Empowerment">
-                    </div>
-                    <h3>Women Empowerment</h3>
-                    <p>Vocational training, microfinance support, entrepreneurship development, and leadership programs for women</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main>
+        <!-- 1. Full-Bleed Hero Section: 100% Screen Width Carousel & Single Floating Overlay Box -->
+        <section class="hero-canvas" id="hero">
 
-    <!-- Partners Section -->
-    <section class="partners-section">
-        <div class="container">
-            <h2>Our Partners</h2>
-            <p class="section-subtitle">Collaborating with leading organizations for greater impact</p>
-            <div class="partners-scroll">
-                <div class="partners-track">
-                    <div class="partner-logo">
-                        <img src="./images/partners/1000377005-removebg-preview.png" alt="Partner 1">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/1600945338842.png" alt="Partner 2">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.07.10.jpeg" alt="Partner 3">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.08.20.jpeg" alt="Partner 4">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.13.18.jpeg" alt="Partner 5">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.14.48.jpeg" alt="Partner 6">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.15.36.jpeg" alt="Partner 7">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.33.27.jpeg" alt="Partner 8">
-                    </div>
-                    <!-- Duplicate for seamless loop -->
-                    <div class="partner-logo">
-                        <img src="./images/partners/1000377005-removebg-preview.png" alt="Partner 1">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/1600945338842.png" alt="Partner 2">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.07.10.jpeg" alt="Partner 3">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.08.20.jpeg" alt="Partner 4">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.13.18.jpeg" alt="Partner 5">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.14.48.jpeg" alt="Partner 6">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.15.36.jpeg" alt="Partner 7">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="./images/partners/WhatsApp Image 2026-01-26 at 00.33.27.jpeg" alt="Partner 8">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!-- Edge-to-Edge Full-Bleed Hero Container -->
+            <div class="unicef-hero-card">
 
-    <!-- Statistics Section -->
-    <section class="stats-section">
-        <div class="container">
-            <h2>Our Reach & Impact</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <h3>13+</h3>
-                    <p>States & Union Territories Covered</p>
+                <!-- 1. Background Image Carousel (100% Viewport Width & Height) -->
+                <div class="hero-slider-bg">
+                    <div class="hero-slide active">
+                        <img src="images/WhatsApp Image 2026-08-22 at 21.23.20.jpeg"
+                            alt="Sattvic Soul Foundation Volunteers at Dhauli Peace Pagoda">
+                    </div>
+                    <div class="hero-slide">
+                        <img src="images/WhatsApp Image 2026-08-24 at 08.28.19 (1).jpeg"
+                            alt="Community Relief Initiative in Rural Odisha">
+                    </div>
+                    <div class="hero-slide">
+                        <img src="images/WhatsApp Image 2026-08-22 at 21.26.04 (1).jpeg"
+                            alt="Child Nutrition and Relief Program">
+                    </div>
+                    <div class="hero-slide">
+                        <img src="images/WhatsApp Image 2026-08-22 at 21.23.21.jpeg"
+                            alt="Education & Kit Distribution Drive">
+                    </div>
+                    <div class="hero-slide">
+                        <img src="images/WhatsApp Image 2026-08-22 at 21.16.28.jpeg"
+                            alt="Sattvic Soul Foundation Volunteers">
+                    </div>
+                    <div class="hero-slide">
+                        <img src="images/WhatsApp Image 2026-01-25 at 23.51.16.jpeg" alt="Field Relief Work">
+                    </div>
+                    <div class="hero-slide">
+                        <img src="images/WhatsApp Image 2026-01-25 at 23.51.15.jpeg" alt="Community Outreach Drive">
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <h3>2019</h3>
-                    <p>Established by Mr. Satyabrata Samal</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Section 8</h3>
-                    <p>Registered Non-Profit (Companies Act 2013)</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Odisha</h3>
-                    <p>Headquarters & Primary Operations</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Featured Gallery Preview -->
-    <section class="gallery-preview">
-        <div class="container">
-            <h2>Our Work in Action</h2>
-            <p class="section-subtitle">Making a difference in communities across India</p>
-            <div class="gallery-grid">
-                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80" alt="Children participating in environmental education workshop" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80" alt="Students learning in classroom with books and supplies" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&q=80" alt="Women's skill development training session" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1576765608622-067973a79f53?w=800&q=80" alt="Community health screening and medical camp" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80" alt="Tree planting initiative with local volunteers" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80" alt="Community members at awareness campaign" class="gallery-item">
-            </div>
-            <div class="gallery-link">
-                <a href="gallery.html" class="cta-button">View Full Gallery</a>
-            </div>
-        </div>
-    </section>
+                <!-- 2. Dark Scrim Gradient Overlay for Contrast -->
+                <div class="hero-scrim-overlay"></div>
 
-    <!-- Footer -->
+                <!-- 3. Floating Content Overlays inside Centered Container -->
+                <div class="container hero-overlay-container">
+                    <div class="unicef-hero-overlay-content">
+
+                        <!-- Left Overlay: Headline & Tag & Our Work Button -->
+                        <div class="hero-text-overlay">
+                            <div class="unicef-tag-wrap">
+                                <span class="unicef-tag-bar"></span>
+                                <span class="unicef-tag-text">SUPPORT OUR CAUSE</span>
+                            </div>
+                            <h1 class="unicef-hero-headline">Sanjeevani for a little smile: Changing the lives of
+                                children in rural Odisha</h1>
+                            <div class="hero-actions-wrap" style="margin-top: 1.5rem;">
+                                <a href="our-work.html" class="btn hero-work-btn">
+                                    Our Work
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" width="18" height="18"
+                                        style="margin-left: 0.35rem; vertical-align: middle;">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- 2. Impact Strip (Dashboard Stats) -->
+        <section class="impact-strip" id="impact-dashboard">
+            <div class="container">
+                <div class="impact-grid">
+                    <div class="impact-card reveal">
+                        <div class="impact-number" data-count="4850+">0</div>
+                        <div class="impact-label">Children Supported</div>
+                        <div class="impact-sublabel">Scholarships & Learning Supplies</div>
+                    </div>
+                    <div class="impact-card reveal">
+                        <div class="impact-number" data-count="13+">0</div>
+                        <div class="impact-label">States & UTs Covered</div>
+                        <div class="impact-sublabel">Grassroots Outreach</div>
+                    </div>
+                    <div class="impact-card reveal">
+                        <div class="impact-number" data-count="28">0</div>
+                        <div class="impact-label">Odisha Districts</div>
+                        <div class="impact-sublabel">Active Regional Operations</div>
+                    </div>
+                    <div class="impact-card reveal">
+                        <div class="impact-number" data-count="6+">0</div>
+                        <div class="impact-label">Years of Impact</div>
+                        <div class="impact-sublabel">Established Sept 2019</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About / Mission Section -->
+        <section class="section-about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper reveal">
+                        <img src="images/WhatsApp Image 2026-01-25 at 23.51.15.jpeg"
+                            alt="Children receiving educational support from Sattvic Soul Foundation in Odisha"
+                            class="about-img">
+                        <div class="about-badge">
+                            <div class="about-badge-title">Founded in 2019</div>
+                            <div class="about-badge-text">Led by Mr. Satyabrata Samal & Dedicated Associates</div>
+                        </div>
+                    </div>
+
+                    <div class="about-content reveal">
+                        <div class="section-tag">Who We Are</div>
+                        <h2 class="section-heading">Sanjeevani for a Little Smile</h2>
+
+                        <p class="about-content-lead">Rooted in Bhubaneswar, Sattvic Soul Foundation was born from a
+                            singular belief: every child and family deserves dignity, health, and a fair chance at life.
+                        </p>
+
+                        <p class="about-text">We operate as a Section 8 non-profit organization dedicated to
+                            sustainable, community-owned growth. Rather than implementing quick fixes, we build
+                            long-term programs that strengthen local schools, protect native ecosystems, deliver
+                            essential medical care, and empower women with sustainable livelihoods.</p>
+
+                        <div class="about-pillars-list">
+                            <div class="pillar-item">
+                                <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Zero-overhead model</span>
+                            </div>
+                            <div class="pillar-item">
+                                <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Community co-creation</span>
+                            </div>
+                            <div class="pillar-item">
+                                <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Complete transparency</span>
+                            </div>
+                            <div class="pillar-item">
+                                <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>UN SDG Alignment</span>
+                            </div>
+                        </div>
+
+                        <a href="about.html" class="btn btn-outline">Read Our Full Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Our Work / Programs -->
+        <section class="section-programs" id="programs">
+            <div class="container text-center">
+                <div class="section-tag">Our Programs</div>
+                <h2 class="section-heading">Focused Impact Across Key Areas</h2>
+                <p class="section-subtitle">We design integrated initiatives that address the structural causes of
+                    poverty and inequality in regional communities.</p>
+
+                <div class="programs-grid">
+                    <!-- Education -->
+                    <div class="program-card reveal">
+                        <div class="program-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"
+                                    d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                            </svg>
+                        </div>
+                        <h3 class="program-title">Education & Literacy</h3>
+                        <p class="program-desc">Providing scholarships, digital learning centers, classroom kits, and
+                            after-school mentorship to ensure children stay in school.</p>
+                        <a href="our-work.html#education" class="program-link">
+                            Learn more
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Environment -->
+                    <div class="program-card reveal">
+                        <div class="program-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"
+                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a2.5 2.5 0 002.5-2.5V11a2 2 0 012-2h1.055M16 3.935A9 9 0 113.055 11" />
+                            </svg>
+                        </div>
+                        <h3 class="program-title">Environmental Care</h3>
+                        <p class="program-desc">Native tree plantation drives, plastic-free village campaigns, rainwater
+                            harvesting, and community waste management programs.</p>
+                        <a href="our-work.html#environment" class="program-link">
+                            Learn more
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Healthcare -->
+                    <div class="program-card reveal">
+                        <div class="program-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="program-title">Healthcare Access</h3>
+                        <p class="program-desc">Free health checkup camps, maternal nutrition kits, preventive care
+                            workshops, and emergency medical assistance in remote areas.</p>
+                        <a href="our-work.html#health" class="program-link">
+                            Learn more
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Women Empowerment -->
+                    <div class="program-card reveal">
+                        <div class="program-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"
+                                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="program-title">Women Empowerment</h3>
+                        <p class="program-desc">Tailoring & micro-entrepreneurship training, self-help group linkages,
+                            and financial literacy workshops for rural women.</p>
+                        <a href="our-work.html#women" class="program-link">
+                            Learn more
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Local Focus Callout (Odisha Context) -->
+        <section class="section-odisha" id="odisha-focus">
+            <div class="container">
+                <div class="odisha-box reveal">
+                    <div class="odisha-grid">
+                        <div class="odisha-content">
+                            <div class="section-tag light">Regional Focus</div>
+                            <h2 class="odisha-title">Deeply Rooted in Odisha</h2>
+                            <p class="odisha-text">Headquartered in Bhubaneswar, our ground teams work directly in
+                                tribal, coastal, and rural belts across Odisha where resources are scarce but potential
+                                is high.</p>
+                            <a href="impact.html" class="btn btn-warm">View Regional Impact Map</a>
+                        </div>
+
+                        <div class="odisha-districts">
+                            <h4
+                                style="color: rgba(255,255,255,0.9); margin-bottom: 1rem; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">
+                                Key Operational Districts</h4>
+                            <div class="districts-grid">
+                                <div class="district-chip">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    </svg>
+                                    Khordha
+                                </div>
+                                <div class="district-chip">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    </svg>
+                                    Cuttack
+                                </div>
+                                <div class="district-chip">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    </svg>
+                                    Puri
+                                </div>
+                                <div class="district-chip">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    </svg>
+                                    Mayurbhanj
+                                </div>
+                                <div class="district-chip">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    </svg>
+                                    Koraput
+                                </div>
+                                <div class="district-chip">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    </svg>
+                                    Balangir
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- 7. Real Stories & Beneficiary Testimonials -->
+        <section class="section-stories" id="stories">
+            <div class="container text-center">
+                <div class="section-tag">Human Impact</div>
+                <h2 class="section-heading">Stories of Change</h2>
+                <p class="section-subtitle">Behind every statistic is a real family whose trajectory changed through
+                    community partnership.</p>
+
+                <div class="stories-grid text-center">
+                    <div class="story-card reveal">
+                        <div>
+                            <svg class="story-quote-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
+                            <p class="story-quote">"With the scholarship and digital learning tools provided by Sattvic
+                                Soul Foundation, my daughter was able to continue her higher secondary education instead
+                                of dropping out."</p>
+                        </div>
+                        <div class="story-author">
+                            <img src="images/WhatsApp Image 2026-01-25 at 23.52.58.jpeg" alt="Pravati Jena"
+                                class="story-avatar">
+                            <div style="text-align: left;">
+                                <div class="story-name">Pravati Jena</div>
+                                <div class="story-role">Parent & Community Member, Cuttack</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-card reveal">
+                        <div>
+                            <svg class="story-quote-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
+                            <p class="story-quote">"The tailoring skill center didn't just give us machines — it taught
+                                42 women in our village how to run an independent cooperative. We now earn a dignified
+                                living."</p>
+                        </div>
+                        <div class="story-author">
+                            <img src="images/WhatsApp Image 2026-01-25 at 23.51.16.jpeg" alt="Sunita Das"
+                                class="story-avatar">
+                            <div style="text-align: left;">
+                                <div class="story-name">Sunita Das</div>
+                                <div class="story-role">Self-Help Group Leader, Khordha</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Noticeable Institutional Partners & Supporters Strip (Positioned Just Before Take Action) -->
+        <section class="section-partners-strip" id="partners">
+            <div class="container">
+                <div class="partners-strip-wrapper reveal">
+                    <div class="partners-strip-header">
+                        <span class="partners-badge">OUR TRUSTED PARTNERS</span>
+                        <h3 class="partners-strip-title">Supported & Backed by Leading Organizations</h3>
+                    </div>
+                    <div class="partners-logo-grid">
+                        <div class="partner-card" title="Partner Organization 1">
+                            <img src="images/partners/1000377005-removebg-preview.png" alt="Institutional Partner 1">
+                        </div>
+                        <div class="partner-card" title="Partner Organization 2">
+                            <img src="images/partners/1600945338842.png" alt="Institutional Partner 2">
+                        </div>
+                        <div class="partner-card" title="Partner Organization 3">
+                            <img src="images/partners/WhatsApp Image 2026-01-26 at 00.07.10.jpeg"
+                                alt="Institutional Partner 3">
+                        </div>
+                        <div class="partner-card" title="Partner Organization 4">
+                            <img src="images/partners/WhatsApp Image 2026-01-26 at 00.08.20.jpeg"
+                                alt="Institutional Partner 4">
+                        </div>
+                        <div class="partner-card" title="Partner Organization 5">
+                            <img src="images/partners/WhatsApp Image 2026-01-26 at 00.13.18.jpeg"
+                                alt="Institutional Partner 5">
+                        </div>
+                        <div class="partner-card" title="Partner Organization 6">
+                            <img src="images/partners/WhatsApp Image 2026-01-26 at 00.14.48.jpeg"
+                                alt="Institutional Partner 6">
+                        </div>
+                        <div class="partner-card" title="Partner Organization 7">
+                            <img src="images/partners/WhatsApp Image 2026-01-26 at 00.15.36.jpeg"
+                                alt="Institutional Partner 7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Get Involved Pathways -->
+        <section class="section-involved" id="get-involved">
+            <div class="container text-center">
+                <div class="section-tag">Take Action</div>
+                <h2 class="section-heading">How You Can Support</h2>
+                <p class="section-subtitle">Whether through financial giving, volunteering your expertise, or corporate
+                    CSR partnerships, your involvement directly impacts lives.</p>
+
+                <div class="involved-grid">
+                    <div class="involved-card highlight reveal">
+                        <div class="involved-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="involved-title">Make a Donation</h3>
+                        <p class="involved-text">Directly fund scholarships, health checkups, and tree plantation
+                            drives. Eligible for 80G tax deduction under Income Tax Act.</p>
+                        <a href="get-involved.html#donate" class="btn btn-warm btn-lg" style="width: 100%;">Donate
+                            Today</a>
+                    </div>
+
+                    <div class="involved-card reveal">
+                        <div class="involved-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="involved-title">Become a Volunteer</h3>
+                        <p class="involved-text">Join our weekend teaching drives, tree plantation events, or health
+                            screening camps across Bhubaneswar and Odisha.</p>
+                        <a href="get-involved.html#volunteer" class="btn btn-outline" style="width: 100%;">Join as
+                            Volunteer</a>
+                    </div>
+
+                    <div class="involved-card reveal">
+                        <div class="involved-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h4m-4 0V11m0 0h4m-4 0H7" />
+                            </svg>
+                        </div>
+                        <h3 class="involved-title">CSR Partnerships</h3>
+                        <p class="involved-text">Partner with us for corporate social responsibility programs aligned
+                            with UN Sustainable Development Goals.</p>
+                        <a href="get-involved.html#partner" class="btn btn-outline" style="width: 100%;">Partner With
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Trust & Transparency Bar -->
+        <section class="section-trust" id="transparency">
+            <div class="container">
+                <div class="trust-wrapper">
+                    <div class="trust-badges reveal">
+                        <div class="trust-badge-item">
+                            <svg class="trust-badge-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div>
+                                <div class="trust-badge-title">Section 8 Registered</div>
+                                <div class="trust-badge-sub">Companies Act 2013</div>
+                            </div>
+                        </div>
+
+                        <div class="trust-badge-item">
+                            <svg class="trust-badge-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div>
+                                <div class="trust-badge-title">80G & 12A Certified</div>
+                                <div class="trust-badge-sub">Tax Exemption Benefits</div>
+                            </div>
+                        </div>
+
+                        <div class="trust-badge-item">
+                            <svg class="trust-badge-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div>
+                                <div class="trust-badge-title">Annual Audits</div>
+                                <div class="trust-badge-sub">Fully Transparent Reporting</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Field Photo Gallery (End of Homepage) -->
+        <section class="section-home-gallery" id="field-gallery">
+            <div class="container text-center">
+                <div class="section-tag">Ground Action</div>
+                <h2 class="section-heading">Field Photo Gallery</h2>
+                <p class="section-subtitle">Authentic moments captured during our ongoing drives across Odisha — from
+                    nutrition relief to youth empowerment.</p>
+
+                <div class="home-gallery-grid">
+                    <!-- Photo 1 -->
+                    <div class="home-gallery-card reveal">
+                        <div class="gallery-img-wrap">
+                            <img src="images/WhatsApp Image 2026-08-22 at 21.23.20.jpeg"
+                                alt="Dhauli Pagoda Cleanliness & Volunteer Drive" class="gallery-img">
+                            <div class="gallery-overlay-badge">
+                                <span class="gallery-category-pill">Community Drive</span>
+                                <span class="gallery-location-pill">Dhauli, Odisha</span>
+                            </div>
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4 class="gallery-card-title">Dhauli Pagoda Volunteer Drive</h4>
+                            <p class="gallery-card-desc">Sattvic Soul youth volunteers coming together for environmental
+                                awareness and site restoration.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 2 -->
+                    <div class="home-gallery-card reveal">
+                        <div class="gallery-img-wrap">
+                            <img src="images/WhatsApp Image 2026-08-24 at 08.28.19 (1).jpeg"
+                                alt="Monsoon Relief Food & Kit Distribution" class="gallery-img">
+                            <div class="gallery-overlay-badge">
+                                <span class="gallery-category-pill">Flood Relief</span>
+                                <span class="gallery-location-pill">Rural Odisha</span>
+                            </div>
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4 class="gallery-card-title">Monsoon Emergency Rations</h4>
+                            <p class="gallery-card-desc">Delivering urgent dry rations, clean drinking water, and
+                                essential kits to flood-affected families.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 3 -->
+                    <div class="home-gallery-card reveal">
+                        <div class="gallery-img-wrap">
+                            <img src="images/WhatsApp Image 2026-08-22 at 21.26.04 (1).jpeg"
+                                alt="Child Nutrition and Hygiene Program" class="gallery-img">
+                            <div class="gallery-overlay-badge">
+                                <span class="gallery-category-pill">Healthcare & Meals</span>
+                                <span class="gallery-location-pill">Mayurbhanj</span>
+                            </div>
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4 class="gallery-card-title">Sanjeevani Nutrition Camp</h4>
+                            <p class="gallery-card-desc">Serving freshly cooked, high-protein meals and conducting
+                                health check-ups for primary students.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 4 -->
+                    <div class="home-gallery-card reveal">
+                        <div class="gallery-img-wrap">
+                            <img src="images/WhatsApp Image 2026-08-22 at 21.23.21.jpeg"
+                                alt="School Supply & Learning Kit Drive" class="gallery-img">
+                            <div class="gallery-overlay-badge">
+                                <span class="gallery-category-pill">Education</span>
+                                <span class="gallery-location-pill">Khordha District</span>
+                            </div>
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4 class="gallery-card-title">Education Kit Distribution</h4>
+                            <p class="gallery-card-desc">Equipping young students with school bags, notebooks,
+                                stationery, and learning aids.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 5 -->
+                    <div class="home-gallery-card reveal">
+                        <div class="gallery-img-wrap">
+                            <img src="images/WhatsApp Image 2026-08-22 at 21.16.28.jpeg"
+                                alt="Youth Leadership & Volunteer Orientation" class="gallery-img">
+                            <div class="gallery-overlay-badge">
+                                <span class="gallery-category-pill">Youth Leadership</span>
+                                <span class="gallery-location-pill">Bhubaneswar HQ</span>
+                            </div>
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4 class="gallery-card-title">Youth Action Network</h4>
+                            <p class="gallery-card-desc">Mobilizing local college students and young professionals for
+                                social development initiatives.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 6 -->
+                    <div class="home-gallery-card reveal">
+                        <div class="gallery-img-wrap">
+                            <img src="images/WhatsApp Image 2026-01-25 at 23.51.16.jpeg"
+                                alt="Community Health & Outreach Drive" class="gallery-img">
+                            <div class="gallery-overlay-badge">
+                                <span class="gallery-category-pill">Outreach</span>
+                                <span class="gallery-location-pill">Puri District</span>
+                            </div>
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4 class="gallery-card-title">Community Health & Hygiene Drive</h4>
+                            <p class="gallery-card-desc">Conducting door-to-door hygiene awareness and distributing
+                                maternal healthcare kits.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-gallery-action">
+                    <a href="stories.html" class="btn btn-outline">
+                        View Detailed Gallery & Field Stories
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            width="20" height="20" style="margin-left: 0.5rem; vertical-align: middle;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Sattvic Soul Foundation</h4>
-                <p>A non-governmental and non-profit organization registered under Section 8 of the Companies Act of 2013</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="our-work.html">Our Work</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <p>Email: info@sattvicsoul.org</p>
-                <p>Location: Odisha, India</p>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#" class="social-icon">f</a>
-                    <a href="#" class="social-icon">t</a>
-                    <a href="#" class="social-icon">i</a>
-                    <a href="#" class="social-icon">y</a>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/SATTVIC Soul.png" alt="Sattvic Soul Foundation" class="footer-logo">
+                    <div class="footer-tagline">"Sanjeevani for a little smile"</div>
+                    <p class="footer-desc">A non-governmental, non-profit organization registered under Section 8 of the
+                        Companies Act, 2013. Dedicated to education, environmental action, healthcare, and women
+                        empowerment.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">About Our Mission</a></li>
+                        <li><a href="our-work.html" class="footer-link">Our Focus Areas</a></li>
+                        <li><a href="impact.html" class="footer-link">Impact & Reports</a></li>
+                        <li><a href="stories.html" class="footer-link">Field Stories</a></li>
+                        <li><a href="get-involved.html" class="footer-link">Get Involved</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Legal & Trust</h4>
+                    <ul class="footer-links">
+                        <li><span class="footer-link">CIN: U85300OR2019NPL031644</span></li>
+                        <li><span class="footer-link">80G Tax Exemption Reg</span></li>
+                        <li><span class="footer-link">12A Registration Active</span></li>
+                        <li><a href="impact.html#reports" class="footer-link">Annual Audit Reports</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Headquarters</h4>
+                    <div class="footer-contact-item">
+                        <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        </svg>
+                        <span>Bhubaneswar, Odisha, India - 751013</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span>info@sattvicsoul.org</span>
+                    </div>
+
+                    <form class="footer-newsletter-form" data-validate style="margin-top: 1.5rem;">
+                        <input type="email" placeholder="Subscribe to newsletter" class="footer-newsletter-input"
+                            required>
+                        <button type="submit" class="btn btn-warm btn-sm" aria-label="Subscribe">Join</button>
+                    </form>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Sattvic Soul Foundation. All rights reserved.</p>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Sattvic Soul Foundation. All rights reserved.</div>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank"
+                        rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" class="social-icon-btn" aria-label="Twitter" target="_blank"
+                        rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank"
+                        rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>

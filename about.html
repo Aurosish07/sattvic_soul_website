@@ -3,171 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Sattvic Soul Foundation - Our journey, mission, and commitment to sustainable development">
-    <title>About Us - Sattvic Soul Foundation</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="About Sattvic Soul Foundation — Founded in 2019 in Bhubaneswar, Odisha. A Section 8 non-profit organization focused on education, environmental conservation, healthcare, and women empowerment.">
+    <title>About Us — Sattvic Soul Foundation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="images/logo.png" alt="Sattvic Soul Foundation Logo" class="logo-image">
-            </div>
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link" aria-label="Sattvic Soul Foundation Home">
+                <img src="images/SATTVIC Soul.png" alt="Sattvic Soul Foundation Logo" class="logo-img">
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
             </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="our-work.html">Our Work</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="our-work.html" class="nav-link">Our Work</a>
+                <a href="impact.html" class="nav-link">Impact</a>
+                <a href="get-involved.html" class="nav-link">Get Involved</a>
+                <a href="stories.html" class="nav-link">Stories</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="nav-actions">
+                    <a href="get-involved.html#donate" class="btn btn-warm">Donate</a>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header" style="background: linear-gradient(135deg, #2d4a7c 0%, #4a6fa5 100%);">
-        <h1>About Sattvic Soul Foundation</h1>
-        <p>Our Journey Towards Sustainable Development</p>
-    </section>
-
-    <!-- Main Content -->
-    <section class="content-section">
-        <div class="container">
-            <div class="about-intro">
-                <h2>Who We Are</h2>
-                <p>Sattvic Soul Foundation was established on <strong>September 10, 2019</strong>, with a vision to bring joy and positive change to underprivileged communities across India. Led by <strong>Mr. Satyabrata Samal</strong> and his dedicated associates, we have grown into a prominent organization operating across 13+ states and union territories.</p>
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>About Us</span>
+                </div>
+                <h1 class="page-hero-title">Our Story & Mission</h1>
+                <p class="page-hero-sub">Founded on September 10, 2019 in Bhubaneswar, Odisha, Sattvic Soul Foundation is dedicated to bringing lasting revival and joy to underserved communities.</p>
             </div>
+        </section>
 
-            <div class="about-details">
-                <div class="detail-item">
-                    <h3>Our Legal Status</h3>
-                    <p>Sattvic Soul Foundation is registered under <strong>Section 8 of the Companies Act of 2013</strong> as a non-profit company. This legal framework ensures all our activities maintain the highest standards of transparency, with funds dedicated entirely to our social objectives rather than profit distribution.</p>
-                </div>
+        <!-- Mission & Overview -->
+        <section class="section-about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content reveal">
+                        <div class="section-tag">Origin & Purpose</div>
+                        <h2 class="section-heading">Sanjeevani for a Little Smile</h2>
+                        <p class="about-content-lead">Sattvic Soul Foundation was established by Mr. Satyabrata Samal alongside a team of committed change-makers to bridge developmental gaps across Odisha and 13+ states in India.</p>
+                        
+                        <p class="about-text">The word <em>Sanjeevani</em> signifies renewal, healing, and life-giving hope. We believe that true social progress is achieved not through transient charity, but by co-creating sustainable systems with local communities. Our work focuses on four interconnected pillars: high-impact education, environmental stewardship, accessible healthcare, and economic empowerment for women.</p>
 
-                <div class="detail-item">
-                    <h3>Our Reach</h3>
-                    <p>Starting from grassroots work with underprivileged children in Odisha, we have grown to operate across <strong>13+ states and union territories</strong> throughout India. Our programs reach both rural villages and urban slums, focusing on sustainable, community-driven development.</p>
-                </div>
-
-                <div class="detail-item">
-                    <h3>Our Focus Areas</h3>
-                    <p>Our work aligns with the United Nations Sustainable Development Goals (SDGs) through four interconnected pillars:</p>
-                    <ul class="focus-list">
-                        <li><strong>Education (SDG 4)</strong> - Scholarships, school supplies, digital literacy, and infrastructure support for quality education access</li>
-                        <li><strong>Environment (SDGs 13, 15)</strong> - Tree plantation, waste management, water conservation, and climate action programs</li>
-                        <li><strong>Health (SDG 3)</strong> - Free medical camps, maternal care, nutrition programs, and sanitation awareness</li>
-                        <li><strong>Women Empowerment (SDG 5)</strong> - Vocational training, microfinance, entrepreneurship, and leadership development</li>
-                    </ul>
-                </div>
-
-                <div class="detail-item">
-                    <h3>Our Values</h3>
-                    <p>We believe in sustainable solutions that create lasting positive change. Our diverse membership is committed to addressing societal challenges through:</p>
-                    <ul class="values-list">
-                        <li>Integrity and Transparency</li>
-                        <li>Community-Centric Approach</li>
-                        <li>Sustainable Development</li>
-                        <li>Inclusive Growth</li>
-                        <li>Accountability</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Leadership Section -->
-            <div class="leadership-section">
-                <h2>Leadership</h2>
-                <div class="leadership-grid">
-                    <div class="leader-card">
-                        <div class="leader-image">
-                            <img src="https://ui-avatars.com/api/?name=Satyabrata+Samal&size=200&background=2d5f3f&color=fff&bold=true" alt="Mr. Satyabrata Samal">
+                        <div class="about-pillars-list">
+                            <div class="pillar-item">
+                                <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Section 8 Registered Non-Profit</span>
+                            </div>
+                            <div class="pillar-item">
+                                <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>100% Tax Deductible (80G & 12A)</span>
+                            </div>
+                            <div class="pillar-item">
+                                <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Audited Annual Financials</span>
+                            </div>
+                            <div class="pillar-item">
+                                <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Grassroots Field Operations</span>
+                            </div>
                         </div>
-                        <h4>Mr. Satyabrata Samal</h4>
-                        <p>Founder & President</p>
-                        <p class="leader-bio">Leading Sattvic Soul Foundation's mission since 2019 to create sustainable social and environmental impact across India</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Timeline Section -->
-    <section class="timeline-section">
-        <div class="container">
-            <h2>Our Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h4>September 10, 2019</h4>
-                        <p>Founded by Mr. Satyabrata Samal as a Section 8 non-profit company, initially focused on education for underprivileged children in Odisha</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h4>2020-2021</h4>
-                        <p>Expanded programs to include environmental conservation, health camps, and women's skill development training</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h4>2022-2023</h4>
-                        <p>Extended operations across multiple districts in Odisha and began work in other states, reaching 13+ states and union territories</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h4>2024-Present</h4>
-                        <p>Continuing grassroots programs with focus on sustainable development aligned with UN SDGs</p>
+                    <div class="about-image-wrapper reveal">
+                        <img src="images/WhatsApp Image 2026-01-07 at 09.22.35.jpeg" alt="Sattvic Soul Foundation team in Bhubaneswar, Odisha" class="about-img">
+                        <div class="about-badge">
+                            <div class="about-badge-title">Corporate Registration</div>
+                            <div class="about-badge-text">CIN: U85300OR2019NPL031644</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Leadership Section -->
+        <section class="section-programs" style="background-color: var(--color-paper);">
+            <div class="container text-center">
+                <div class="section-tag">Leadership</div>
+                <h2 class="section-heading">Guided by Purpose & Integrity</h2>
+                <p class="section-subtitle">Our leadership team brings together decades of experience in development management, community organizing, and social governance.</p>
+
+                <div style="max-width: 720px; margin: 0 auto;">
+                    <div class="leader-card reveal text-center">
+                        <img src="images/WhatsApp Image 2026-01-25 at 23.51.15.jpeg" alt="Mr. Satyabrata Samal" class="leader-avatar">
+                        <div style="text-align: left;">
+                            <h3 style="margin-bottom: 0.25rem;">Mr. Satyabrata Samal</h3>
+                            <div style="color: var(--color-primary); font-family: var(--font-heading); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.75rem;">Founder & President</div>
+                            <p style="color: var(--color-ink-muted); font-size: 0.95rem; line-height: 1.6;">"Our goal has always been simple: to stand beside the most vulnerable families in Odisha and give them the tools to build their own future with dignity."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Timeline -->
+        <section class="section-stories">
+            <div class="container text-center">
+                <div class="section-tag">Our Journey</div>
+                <h2 class="section-heading">Milestones & Growth</h2>
+                <p class="section-subtitle">From a local grassroots effort in Bhubaneswar to a multi-district organization impacting thousands of lives.</p>
+
+                <div class="timeline text-center">
+                    <div class="timeline-item reveal" style="text-align: left;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">September 2019</div>
+                        <h3 class="timeline-title">Foundation Established</h3>
+                        <p class="timeline-desc">Registered under Section 8 of the Companies Act, 2013 in Bhubaneswar, starting with immediate scholarship and learning kit support for 120 children in Khordha district.</p>
+                    </div>
+
+                    <div class="timeline-item reveal" style="text-align: left;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2020 – 2021</div>
+                        <h3 class="timeline-title">Healthcare & Relief Expansion</h3>
+                        <p class="timeline-desc">Launched free health checkup camps and maternal care kits in rural Odisha villages, while scaling tree plantation drives across 5 coastal districts.</p>
+                    </div>
+
+                    <div class="timeline-item reveal" style="text-align: left;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2022 – 2023</div>
+                        <h3 class="timeline-title">Women Livelihood Cooperatives</h3>
+                        <p class="timeline-desc">Established tailoring and micro-entrepreneurship training centers in Mayurbhanj, Cuttack, and Koraput, creating self-sustaining cooperatives for 300+ women.</p>
+                    </div>
+
+                    <div class="timeline-item reveal" style="text-align: left;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2024 – Present</div>
+                        <h3 class="timeline-title">National Footprint & SDG Alignment</h3>
+                        <p class="timeline-desc">Expanded programs across 13+ states and UTs in India while maintaining deep operational headquarters in Bhubaneswar, Odisha.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Sattvic Soul Foundation</h4>
-                <p>A non-governmental and non-profit organization registered under Section 8 of the Companies Act of 2013</p>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/SATTVIC Soul.png" alt="Sattvic Soul Foundation" class="footer-logo">
+                    <div class="footer-tagline">"Sanjeevani for a little smile"</div>
+                    <p class="footer-desc">A non-governmental, non-profit organization registered under Section 8 of the Companies Act, 2013. Dedicated to education, environmental action, healthcare, and women empowerment.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">About Our Mission</a></li>
+                        <li><a href="our-work.html" class="footer-link">Our Focus Areas</a></li>
+                        <li><a href="impact.html" class="footer-link">Impact & Reports</a></li>
+                        <li><a href="stories.html" class="footer-link">Field Stories</a></li>
+                        <li><a href="get-involved.html" class="footer-link">Get Involved</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Legal & Trust</h4>
+                    <ul class="footer-links">
+                        <li><span class="footer-link">CIN: U85300OR2019NPL031644</span></li>
+                        <li><span class="footer-link">80G Tax Exemption Reg</span></li>
+                        <li><span class="footer-link">12A Registration Active</span></li>
+                        <li><a href="impact.html#reports" class="footer-link">Annual Audit Reports</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Headquarters</h4>
+                    <div class="footer-contact-item">
+                        <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        </svg>
+                        <span>Bhubaneswar, Odisha, India - 751013</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span>info@sattvicsoul.org</span>
+                    </div>
+
+                    <form class="footer-newsletter-form" data-validate style="margin-top: 1.5rem;">
+                        <input type="email" placeholder="Subscribe to newsletter" class="footer-newsletter-input" required>
+                        <button type="submit" class="btn btn-warm btn-sm" aria-label="Subscribe">Join</button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="our-work.html">Our Work</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <p>Email: info@sattvicsoul.org</p>
-                <p>Location: Odisha, India</p>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Sattvic Soul Foundation. All rights reserved.</div>
                 <div class="social-links">
-                    <a href="#" class="social-icon">f</a>
-                    <a href="#" class="social-icon">t</a>
-                    <a href="#" class="social-icon">i</a>
-                    <a href="#" class="social-icon">y</a>
+                    <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" class="social-icon-btn" aria-label="Twitter" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Sattvic Soul Foundation. All rights reserved.</p>
-        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,188 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Our Work - Sattvic Soul Foundation's initiatives in education, environment, health, and women empowerment">
-    <title>Our Work - Sattvic Soul Foundation</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Our Work — Sattvic Soul Foundation's initiatives across Education, Environment Conservation, Healthcare, and Women Empowerment in Odisha and India.">
+    <title>Our Work — Sattvic Soul Foundation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="images/logo.png" alt="Sattvic Soul Foundation Logo" class="logo-image">
-            </div>
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link" aria-label="Sattvic Soul Foundation Home">
+                <img src="images/SATTVIC Soul.png" alt="Sattvic Soul Foundation Logo" class="logo-img">
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
             </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="our-work.html">Our Work</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="our-work.html" class="nav-link active">Our Work</a>
+                <a href="impact.html" class="nav-link">Impact</a>
+                <a href="get-involved.html" class="nav-link">Get Involved</a>
+                <a href="stories.html" class="nav-link">Stories</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="nav-actions">
+                    <a href="get-involved.html#donate" class="btn btn-warm">Donate</a>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header" style="background: linear-gradient(135deg, #2d4a7c 0%, #4a6fa5 100%);">
-        <h1>Our Work</h1>
-        <p>Creating Impact Across Four Key Focus Areas</p>
-    </section>
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Our Work</span>
+                </div>
+                <h1 class="page-hero-title">Programs & Core Pillars</h1>
+                <p class="page-hero-sub">We design and execute multi-year development programs focused on systemic progress in education, climate resilience, public health, and women's self-reliance.</p>
+            </div>
+        </section>
 
-    <!-- Work Areas -->
-    <section class="content-section">
-        <div class="container">
-            <div class="work-grid">
-                <!-- Education -->
-                <div class="work-card">
-                    <div class="work-icon">📚</div>
-                    <h3>Education</h3>
-                    <p class="work-category">Quality Learning Opportunities</p>
-                    <ul class="work-activities">
-                        <li>Scholarship assistance for students from low-income families</li>
-                        <li>Classroom furniture and learning material donations</li>
-                        <li>Computer and internet access programs</li>
-                        <li>Teacher workshops on modern pedagogy methods</li>
-                        <li>After-school tutoring and mentorship programs</li>
-                    </ul>
-                    <p class="work-impact">Helping students stay in school and access quality education regardless of economic background.</p>
+        <!-- Detailed Programs -->
+        <section class="section-programs" style="background-color: var(--color-paper);">
+            <div class="container">
+                
+                <!-- 1. Education -->
+                <div id="education" style="margin-bottom: 5rem;" class="reveal">
+                    <div class="about-grid" style="align-items: center;">
+                        <div class="about-content">
+                            <div class="section-tag">Pillar 01</div>
+                            <h2 class="section-heading">Education & Digital Literacy</h2>
+                            <p class="about-content-lead">Access to quality education is the most potent catalyst for breaking intergenerational cycles of poverty.</p>
+                            <p class="about-text">Our education initiatives support children from marginalized backgrounds in rural and peri-urban Odisha. We provide merit-and-need scholarships, donate essential classroom furniture and science kits, set up community digital learning hubs, and organize after-school remedial tutoring.</p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <div style="background-color: var(--color-mist); padding: 0.75rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; color: var(--color-navy);">
+                                    4,850+ Students Reached
+                                </div>
+                                <div style="background-color: var(--color-mist); padding: 0.75rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; color: var(--color-navy);">
+                                    24 School Labs Upgraded
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-image-wrapper">
+                            <img src="images/WhatsApp Image 2026-01-25 at 23.51.15.jpeg" alt="Education program in Odisha" class="about-img">
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Environment -->
-                <div class="work-card">
-                    <div class="work-icon">🌍</div>
-                    <h3>Environment</h3>
-                    <p class="work-category">Sustainable Conservation</p>
-                    <ul class="work-activities">
-                        <li>Community tree plantation drives with native species</li>
-                        <li>Plastic-free village campaigns and waste segregation training</li>
-                        <li>Rainwater harvesting system installation</li>
-                        <li>School and community environmental education workshops</li>
-                        <li>Solar energy awareness and promotion</li>
-                    </ul>
-                    <p class="work-impact">Creating more sustainable communities through practical environmental action and awareness.</p>
+                <!-- 2. Environment -->
+                <div id="environment" style="margin-bottom: 5rem;" class="reveal">
+                    <div class="about-grid" style="align-items: center;">
+                        <div class="about-image-wrapper">
+                            <img src="images/WhatsApp Image 2026-01-07 at 09.22.35.jpeg" alt="Environmental restoration initiative" class="about-img">
+                        </div>
+                        <div class="about-content">
+                            <div class="section-tag">Pillar 02</div>
+                            <h2 class="section-heading">Environmental Stewardship</h2>
+                            <p class="about-content-lead">Building climate-resilient rural communities through native reforestation and sustainable resource management.</p>
+                            <p class="about-text">Odisha's coastal and forested regions face growing climate threats. Our team leads mass tree planting drives using indigenous species, establishes rainwater harvesting systems in drought-prone blocks, and conducts plastic segregation drives across Panchayats.</p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <div style="background-color: var(--color-mist); padding: 0.75rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; color: var(--color-navy);">
+                                    15,000+ Trees Planted
+                                </div>
+                                <div style="background-color: var(--color-mist); padding: 0.75rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; color: var(--color-navy);">
+                                    18 Plastic-Free Villages
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Health -->
-                <div class="work-card">
-                    <div class="work-icon">❤️</div>
-                    <h3>Health</h3>
-                    <p class="work-category">Wellness & Healthcare Access</p>
-                    <ul class="work-activities">
-                        <li>Free health screening camps in rural areas</li>
-                        <li>Prenatal and postnatal care for expecting mothers</li>
-                        <li>Nutritional food distribution and education programs</li>
-                        <li>Mental health awareness sessions</li>
-                        <li>First aid training and emergency response support</li>
-                    </ul>
-                    <p class="work-impact">Bringing essential healthcare services to communities with limited medical access.</p>
+                <!-- 3. Health -->
+                <div id="health" style="margin-bottom: 5rem;" class="reveal">
+                    <div class="about-grid" style="align-items: center;">
+                        <div class="about-content">
+                            <div class="section-tag">Pillar 03</div>
+                            <h2 class="section-heading">Healthcare & Preventive Wellness</h2>
+                            <p class="about-content-lead">Delivering vital health interventions to remote populations where medical infrastructure is sparse.</p>
+                            <p class="about-text">We organize mobile medical checkup camps, distribute maternal health and nutrition kits, offer free eye and dental screenings, and run awareness campaigns on clean water, sanitation, and hygiene (WASH).</p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <div style="background-color: var(--color-mist); padding: 0.75rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; color: var(--color-navy);">
+                                    82+ Free Medical Camps
+                                </div>
+                                <div style="background-color: var(--color-mist); padding: 0.75rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; color: var(--color-navy);">
+                                    12,400+ Patients Served
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-image-wrapper">
+                            <img src="images/WhatsApp Image 2026-01-25 at 23.51.16.jpeg" alt="Healthcare camp by Sattvic Soul Foundation" class="about-img">
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Women Empowerment -->
-                <div class="work-card">
-                    <div class="work-icon">👩</div>
-                    <h3>Women Empowerment</h3>
-                    <p class="work-category">Economic & Social Development</p>
-                    <ul class="work-activities">
-                        <li>Tailoring, handicrafts, and computer skills training</li>
-                        <li>Self-help group formation and microfinance linkages</li>
-                        <li>Women's rights and legal awareness programs</li>
-                        <li>Small business development and marketing support</li>
-                        <li>Financial literacy and savings programs</li>
-                    </ul>
-                    <p class="work-impact">Supporting women to build financial independence and community leadership.</p>
+                <!-- 4. Women Empowerment -->
+                <div id="women" class="reveal">
+                    <div class="about-grid" style="align-items: center;">
+                        <div class="about-image-wrapper">
+                            <img src="images/WhatsApp Image 2026-01-25 at 23.52.58.jpeg" alt="Women empowerment training center" class="about-img">
+                        </div>
+                        <div class="about-content">
+                            <div class="section-tag">Pillar 04</div>
+                            <h2 class="section-heading">Women's Livelihoods & Leadership</h2>
+                            <p class="about-content-lead">Fostering financial independence through vocational skill development and micro-entrepreneurship.</p>
+                            <p class="about-text">We set up vocational centers offering certified training in tailoring, handicraft production, computer operations, and financial literacy. We link trained women with self-help groups (SHGs) and local markets to build sustainable micro-enterprises.</p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <div style="background-color: var(--color-mist); padding: 0.75rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; color: var(--color-navy);">
+                                    650+ Women Trained
+                                </div>
+                                <div style="background-color: var(--color-mist); padding: 0.75rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; color: var(--color-navy);">
+                                    32 Self-Help Cooperatives
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SDG Alignment -->
+        <section class="section-stories">
+            <div class="container text-center">
+                <div class="section-tag">Global Framework</div>
+                <h2 class="section-heading">UN Sustainable Development Goals</h2>
+                <p class="section-subtitle">Our ground operations are mapped directly to five UN Sustainable Development Goals.</p>
+
+                <div class="programs-grid">
+                    <div class="program-card reveal text-center">
+                        <div class="program-icon-box" style="margin: 0 auto 1rem;">
+                            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 1.2rem;">SDG 3</span>
+                        </div>
+                        <h4>Good Health & Well-being</h4>
+                        <p class="program-desc">Free health checkups, maternal nutrition kits, and WASH awareness.</p>
+                    </div>
+
+                    <div class="program-card reveal text-center">
+                        <div class="program-icon-box" style="margin: 0 auto 1rem;">
+                            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 1.2rem;">SDG 4</span>
+                        </div>
+                        <h4>Quality Education</h4>
+                        <p class="program-desc">Scholarships, digital labs, and learning support for underprivileged youth.</p>
+                    </div>
+
+                    <div class="program-card reveal text-center">
+                        <div class="program-icon-box" style="margin: 0 auto 1rem;">
+                            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 1.2rem;">SDG 5</span>
+                        </div>
+                        <h4>Gender Equality</h4>
+                        <p class="program-desc">Vocational training and micro-enterprise linkage for women in rural Odisha.</p>
+                    </div>
+
+                    <div class="program-card reveal text-center">
+                        <div class="program-icon-box" style="margin: 0 auto 1rem;">
+                            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 1.2rem;">SDG 13</span>
+                        </div>
+                        <h4>Climate Action</h4>
+                        <p class="program-desc">Community-led native tree plantation and rainwater harvesting projects.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Our Approach -->
-    <section class="approach-section">
-        <div class="container">
-            <h2>How We Work</h2>
-            <p class="section-subtitle">Community-centered, sustainable, and transparent</p>
-            <div class="approach-grid">
-                <div class="approach-card">
-                    <h4>🤝 Community Partnership</h4>
-                    <p>We work directly with local communities, understanding their needs and involving them in every step of our programs.</p>
-                </div>
-                <div class="approach-card">
-                    <h4>🎯 Focused Impact</h4>
-                    <p>Rather than spreading resources thin, we concentrate on sustainable programs that create measurable change.</p>
-                </div>
-                <div class="approach-card">
-                    <h4>📊 Transparency</h4>
-                    <p>As a Section 8 company, we maintain complete transparency in our operations and fund utilization.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Get Involved Section -->
-    <section class="get-involved-section">
-        <div class="container">
-            <h2>Get Involved</h2>
-            <p class="section-subtitle">Join us in creating positive change</p>
-            <div class="involvement-options">
-                <div class="involvement-card">
-                    <h4>🤝 Volunteer</h4>
-                    <p>Contribute your time and skills to our programs</p>
-                </div>
-                <div class="involvement-card">
-                    <h4>💼 Partner</h4>
-                    <p>Corporate partnerships and collaborations</p>
-                </div>
-                <div class="involvement-card">
-                    <h4>📣 Spread Awareness</h4>
-                    <p>Help us reach more people who need support</p>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="contact.html" class="cta-button">Contact Us to Help</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Sattvic Soul Foundation</h4>
-                <p>A non-governmental and non-profit organization registered under Section 8 of the Companies Act of 2013</p>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/SATTVIC Soul.png" alt="Sattvic Soul Foundation" class="footer-logo">
+                    <div class="footer-tagline">"Sanjeevani for a little smile"</div>
+                    <p class="footer-desc">A non-governmental, non-profit organization registered under Section 8 of the Companies Act, 2013. Dedicated to education, environmental action, healthcare, and women empowerment.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">About Our Mission</a></li>
+                        <li><a href="our-work.html" class="footer-link">Our Focus Areas</a></li>
+                        <li><a href="impact.html" class="footer-link">Impact & Reports</a></li>
+                        <li><a href="stories.html" class="footer-link">Field Stories</a></li>
+                        <li><a href="get-involved.html" class="footer-link">Get Involved</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Legal & Trust</h4>
+                    <ul class="footer-links">
+                        <li><span class="footer-link">CIN: U85300OR2019NPL031644</span></li>
+                        <li><span class="footer-link">80G Tax Exemption Reg</span></li>
+                        <li><span class="footer-link">12A Registration Active</span></li>
+                        <li><a href="impact.html#reports" class="footer-link">Annual Audit Reports</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Headquarters</h4>
+                    <div class="footer-contact-item">
+                        <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        </svg>
+                        <span>Bhubaneswar, Odisha, India - 751013</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span>info@sattvicsoul.org</span>
+                    </div>
+
+                    <form class="footer-newsletter-form" data-validate style="margin-top: 1.5rem;">
+                        <input type="email" placeholder="Subscribe to newsletter" class="footer-newsletter-input" required>
+                        <button type="submit" class="btn btn-warm btn-sm" aria-label="Subscribe">Join</button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="our-work.html">Our Work</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <p>Email: info@sattvicsoul.org</p>
-                <p>Location: Odisha, India</p>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Sattvic Soul Foundation. All rights reserved.</div>
                 <div class="social-links">
-                    <a href="#" class="social-icon">f</a>
-                    <a href="#" class="social-icon">t</a>
-                    <a href="#" class="social-icon">i</a>
-                    <a href="#" class="social-icon">y</a>
+                    <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" class="social-icon-btn" aria-label="Twitter" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Sattvic Soul Foundation. All rights reserved.</p>
-        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>
