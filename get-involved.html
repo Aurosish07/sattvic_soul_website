@@ -36,9 +36,6 @@
                 <a href="get-involved.html" class="nav-link active">Get Involved</a>
                 <a href="stories.html" class="nav-link">Stories</a>
                 <a href="contact.html" class="nav-link">Contact</a>
-                <div class="nav-actions">
-                    <a href="get-involved.html#donate" class="btn btn-warm">Donate</a>
-                </div>
             </nav>
         </div>
     </header>
@@ -55,66 +52,141 @@
             </div>
         </section>
 
-        <!-- 1. Donate Section -->
+        <!-- 1. QR Code Scan & Donation Verification Section -->
         <section class="section-involved" id="donate">
             <div class="container">
-                <div class="about-grid">
+                <div class="about-grid" style="align-items: start; gap: 2.5rem;">
+                    
+                    <!-- Left Column: Scan QR Code & UPI Card -->
                     <div class="reveal">
-                        <div class="section-tag">Financial Support</div>
-                        <h2 class="section-heading">Make a Tax-Deductible Donation</h2>
-                        <p class="about-content-lead">Your financial contribution goes directly to scholarship funds, medical kits, and native sapling plantations.</p>
+                        <div class="section-tag">Direct UPI Donation</div>
+                        <h2 class="section-heading">Scan & Pay via UPI</h2>
+                        <p class="about-content-lead">Scan the QR code using Google Pay, PhonePe, Paytm, BHIM, or any UPI app to make your instant contribution.</p>
                         
-                        <div class="story-card" style="background-color: var(--color-paper); margin-bottom: 1.5rem;">
-                            <h4 style="margin-bottom: 0.5rem;">Bank Transfer Details (NEFT / RTGS)</h4>
-                            <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--color-ink-muted);">Account Name: <strong>SATTVIC SOUL FOUNDATION</strong></p>
-                            <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--color-ink-muted);">Bank: <strong>State Bank of India (SBI)</strong></p>
-                            <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--color-ink-muted);">Account No: <strong>38890123456</strong> (Sample Placeholder)</p>
-                            <p style="font-size: 0.9rem; margin-bottom: 0; color: var(--color-ink-muted);">IFSC Code: <strong>SBIN0001234</strong></p>
-                        </div>
-
-                        <div class="pillar-item" style="margin-bottom: 0.5rem;">
-                            <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            <span>80G Tax Exemption Certificate issued for all donations</span>
-                        </div>
-                        <div class="pillar-item">
-                            <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            <span>100% receipt emailed within 24 hours of transaction</span>
+                        <!-- QR Code Card Visual -->
+                        <div class="qr-code-card" style="background: var(--color-paper); border: 1px solid var(--color-mist-dark); border-radius: var(--radius-lg); padding: 1.5rem; text-align: center; box-shadow: var(--shadow-md); margin-bottom: 1.5rem;">
+                            <img src="images/upi_qr_code.png" alt="Sattvic Soul Foundation UPI QR Code" style="max-width: 280px; width: 100%; border-radius: var(--radius-md); border: 1px solid var(--color-mist); margin: 0 auto 1rem auto; display: block;">
+                            
+                            <div class="upi-id-copy-box" style="background: var(--color-paper-muted); padding: 0.75rem 1rem; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; border: 1px dashed var(--color-primary-light);">
+                                <div style="text-align: left;">
+                                    <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-ink-muted); display: block; font-weight: 600;">Official UPI ID</span>
+                                    <strong style="color: var(--color-navy); font-size: 1rem;">sattvicsoul@sbi</strong>
+                                </div>
+                                <button type="button" class="copy-btn" data-copy="sattvicsoul@sbi">Copy UPI</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="story-card reveal" style="border: 2px solid var(--color-primary); box-shadow: var(--shadow-md);">
-                        <h3 style="margin-bottom: 1rem;">Instant Online Giving</h3>
-                        <p style="color: var(--color-ink-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">Select an amount to sponsor a specific initiative:</p>
-
-                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 1.5rem;">
-                            <button type="button" class="btn btn-outline btn-sm" style="font-weight: 700;">₹1,000</button>
-                            <button type="button" class="btn btn-outline btn-sm" style="font-weight: 700;">₹2,500</button>
-                            <button type="button" class="btn btn-outline btn-sm" style="font-weight: 700;">₹5,000</button>
+                    <!-- Right Column: Transaction ID & Verification Form -->
+                    <div class="impact-calc-card reveal" style="background: var(--color-paper); border: 1px solid var(--color-mist-dark); border-radius: var(--radius-xl); padding: 2rem; box-shadow: var(--shadow-lg);">
+                        <div class="calc-header" style="margin-bottom: 1.5rem;">
+                            <h3 class="calc-title" style="font-size: 1.35rem; color: var(--color-navy);">Submit Payment Details</h3>
+                            <p class="calc-sub" style="font-size: 0.9rem; color: var(--color-ink-muted);">After scanning & paying, submit your Transaction ID below to receive your official 80G Tax Receipt.</p>
                         </div>
 
-                        <form data-validate>
-                            <div class="form-group">
-                                <label for="donateAmount" class="form-label">Custom Amount (INR)</label>
-                                <input type="number" id="donateAmount" class="form-input" placeholder="e.g. 3000" min="100" required>
+                        <!-- Amount Tiers for Field Impact Calculation -->
+                        <div class="calc-preset-grid" style="margin-bottom: 1rem;">
+                            <button type="button" class="calc-preset-btn" data-amount="1000">₹1,000</button>
+                            <button type="button" class="calc-preset-btn active" data-amount="2500">₹2,500</button>
+                            <button type="button" class="calc-preset-btn" data-amount="5000">₹5,000</button>
+                            <button type="button" class="calc-preset-btn" data-amount="10000">₹10,000</button>
+                        </div>
+
+                        <!-- Dynamic Real-Time Field Impact Display -->
+                        <div class="calc-impact-box" style="margin-bottom: 1.25rem;">
+                            <div class="calc-impact-label">Direct Field Impact:</div>
+                            <div class="calc-impact-text" id="impactOutputText">Provides 25 nutritious meals + 1 complete child healthcare & hygiene kit in rural Odisha.</div>
+                        </div>
+
+                        <form id="donationVerificationForm">
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <label for="donateAmount" class="form-label">Amount Contributed (₹ INR)*</label>
+                                <input type="number" id="donateAmount" class="form-input" value="2500" min="10" required placeholder="e.g. 2500">
                             </div>
-                            <div class="form-group">
-                                <label for="donorName" class="form-label">Full Name</label>
-                                <input type="text" id="donorName" class="form-input" placeholder="Your name" required>
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <label for="txnId" class="form-label">UPI Transaction ID / UTR Ref No.*</label>
+                                <input type="text" id="txnId" class="form-input" placeholder="e.g. 423981029384" required>
                             </div>
-                            <div class="form-group">
-                                <label for="donorEmail" class="form-label">Email Address (for 80G receipt)</label>
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <label for="donorName" class="form-label">Full Name*</label>
+                                <input type="text" id="donorName" class="form-input" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <label for="donorPhone" class="form-label">Phone / WhatsApp Number*</label>
+                                <input type="tel" id="donorPhone" class="form-input" placeholder="+91 98765 43210" required>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <label for="donorEmail" class="form-label">Email Address (for 80G Tax Receipt)*</label>
                                 <input type="email" id="donorEmail" class="form-input" placeholder="you@example.com" required>
                             </div>
-                            <div class="form-group">
-                                <label for="donorPAN" class="form-label">PAN Number (Required for Tax Exemption)</label>
+                            <div class="form-group" style="margin-bottom: 1.5rem;">
+                                <label for="donorPAN" class="form-label">PAN Number (Optional - for 80G Tax Exemption)</label>
                                 <input type="text" id="donorPAN" class="form-input" placeholder="ABCDE1234F">
                             </div>
-                            <button type="submit" class="btn btn-warm btn-lg" style="width: 100%;">Proceed to Secure Payment</button>
+                            <button type="submit" class="btn btn-warm btn-lg" style="width: 100%; justify-content: center;">Submit Payment Verification →</button>
                         </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Donor Frequently Asked Questions (FAQ) Section -->
+        <section class="section-faq" style="padding: 4rem 0; background: var(--color-paper-muted);">
+            <div class="container">
+                <div class="text-center" style="max-width: 720px; margin: 0 auto 3rem auto;">
+                    <div class="section-tag">Transparency & FAQs</div>
+                    <h2 class="section-heading">Frequently Asked Donor Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about tax savings, receipt generation, and fund utilization.</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <button class="faq-question">
+                            Are donations to Sattvic Soul Foundation tax-exempt?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! Sattvic Soul Foundation is registered under Section 8 of the Companies Act and holds valid 80G and 12A certifications. All monetary contributions qualify for 50% to 100% tax deduction under Section 80G of the Indian Income Tax Act.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How and when will I receive my 80G tax receipt?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Your official tax receipt along with Form 10BE details will be sent directly to your registered email address within 24 hours of successful payment confirmation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Can corporate entities contribute through CSR grants?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. Sattvic Soul Foundation holds an active CSR-1 registration with the Ministry of Corporate Affairs (MCA). Corporates can partner with us for Schedule VII CSR initiatives in education, environmental sustainability, and health.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What percentage of my donation goes directly to the field?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>88% of all funds are allocated directly to child education kits, medical camps, and tree planting drives. Only 12% covers essential field logistics, compliance audits, and administration.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,6 +368,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating Quick-Donate Action (Mobile & Tablet) -->
+    <a href="get-involved.html#donate" class="floating-quick-donate" aria-label="Donate Now">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4" />
+        </svg>
+        Donate
+    </a>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>

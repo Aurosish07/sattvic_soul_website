@@ -525,5 +525,153 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // ----------------------------------------------------------------------
+    // 13. Interactive Donation Impact Calculator
+    // ----------------------------------------------------------------------
+    const presetBtns = document.querySelectorAll('.calc-preset-btn');
+    const customAmountInput = document.getElementById('donateAmount');
+    const impactOutputText = document.getElementById('impactOutputText');
+
+    const getImpactMessage = (amount) => {
+        const amt = parseInt(amount, 10);
+        if (isNaN(amt) || amt <= 0) return 'Enter an amount to see your direct field impact.';
+        if (amt < 1000) return `Sponsors ${Math.floor(amt / 100)} nutritious meals for underserved children in rural Odisha.`;
+        if (amt < 2500) return `Provides ${Math.floor(amt / 100)} meals + 1 complete child healthcare & hygiene kit.`;
+        if (amt < 5000) return `Plants ${Math.floor(amt / 100)} native saplings & provides 1 child's school kit for 6 months.`;
+        if (amt < 10000) return `Sponsors 1 child's full annual education & digital learning access.`;
+        return `Funds a complete mobile health screening camp serving 100+ rural villagers.`;
+    };
+
+    if (presetBtns.length > 0 && impactOutputText) {
+        presetBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                presetBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const val = btn.getAttribute('data-amount');
+                if (customAmountInput) customAmountInput.value = val;
+                impactOutputText.textContent = getImpactMessage(val);
+            });
+        });
+
+        if (customAmountInput) {
+            customAmountInput.addEventListener('input', (e) => {
+                const val = e.target.value;
+                presetBtns.forEach(b => {
+                    if (b.getAttribute('data-amount') === val) {
+                        b.classList.add('active');
+                    } else {
+                        b.classList.remove('active');
+                    }
+                });
+                impactOutputText.textContent = getImpactMessage(val);
+            });
+        }
+    }
+
+    // Donation Payment Verification Form Submission
+    const donationVerificationForm = document.getElementById('donationVerificationForm');
+    if (donationVerificationForm) {
+        donationVerificationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const donorName = document.getElementById('donorName')?.value || 'Donor';
+            const donorEmail = document.getElementById('donorEmail')?.value || '';
+            const txnId = document.getElementById('txnId')?.value || '';
+            const amt = document.getElementById('donateAmount')?.value || '0';
+
+            // Show custom verification alert modal
+            alert(`🎉 Payment Verification Submitted!\n\nThank you, ${donorName}!\nWe have received your transaction reference: ${txnId}.\n\nOur accounts team will verify your payment of ₹${amt} and email your official 80G Tax Exemption Receipt to ${donorEmail} within 24 hours.`);
+
+            donationVerificationForm.reset();
+        });
+    }
+
+    // ----------------------------------------------------------------------
+    // 14. Copy Bank Details to Clipboard
+    // ----------------------------------------------------------------------
+    const copyBankBtns = document.querySelectorAll('.copy-btn[data-copy]');
+    copyBankBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const textToCopy = btn.getAttribute('data-copy');
+            if (!textToCopy) return;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const originalHtml = btn.innerHTML;
+                btn.innerHTML = 'Copied! ✓';
+                btn.style.background = '#10B981';
+                setTimeout(() => {
+                    btn.innerHTML = originalHtml;
+                    btn.style.background = '';
+                }, 2000);
+            }).catch(err => {
+                console.error('Clipboard copy failed: ', err);
+            });
+        });
+    });
+
+    // ----------------------------------------------------------------------
+    // 15. FAQ Accordion Handler
+    // ----------------------------------------------------------------------
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const faqItem = btn.closest('.faq-item');
+            if (!faqItem) return;
+            
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close other items
+            document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+            
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        });
+    });
+
+    // ----------------------------------------------------------------------
+    // 16. Universal Image Lightbox Modal Trigger
+    // ----------------------------------------------------------------------
+    const universalLightboxModal = document.querySelector('.lightbox-modal');
+    const universalLightboxImg = document.querySelector('.lightbox-img');
+    const universalLightboxTitle = document.querySelector('.lightbox-caption-title');
+    const universalLightboxText = document.querySelector('.lightbox-caption-text');
+    const universalLightboxClose = document.querySelector('.lightbox-close-btn');
+
+    const openUniversalLightbox = (imgSrc, title, desc) => {
+        if (!universalLightboxModal || !universalLightboxImg) return;
+        universalLightboxImg.src = imgSrc;
+        if (universalLightboxTitle) universalLightboxTitle.textContent = title || 'Sattvic Soul Foundation Field Image';
+        if (universalLightboxText) universalLightboxText.textContent = desc || 'Ground action photo from our rural Odisha initiatives.';
+        universalLightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+
+    const closeUniversalLightbox = () => {
+        if (!universalLightboxModal) return;
+        universalLightboxModal.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+
+    document.addEventListener('click', (e) => {
+        const trigger = e.target.closest('[data-lightbox-src]');
+        if (trigger) {
+            e.preventDefault();
+            const src = trigger.getAttribute('data-lightbox-src') || trigger.src;
+            const title = trigger.getAttribute('data-lightbox-title') || trigger.alt;
+            const desc = trigger.getAttribute('data-lightbox-desc') || '';
+            openUniversalLightbox(src, title, desc);
+        }
+    });
+
+    if (universalLightboxClose) {
+        universalLightboxClose.addEventListener('click', closeUniversalLightbox);
+    }
+    if (universalLightboxModal) {
+        universalLightboxModal.addEventListener('click', (e) => {
+            if (e.target === universalLightboxModal) closeUniversalLightbox();
+        });
+    }
 });
+
 

@@ -41,9 +41,6 @@
                 <a href="get-involved.html" class="nav-link">Get Involved</a>
                 <a href="stories.html" class="nav-link">Stories</a>
                 <a href="contact.html" class="nav-link">Contact</a>
-                <div class="nav-actions">
-                    <a href="get-involved.html#donate" class="btn btn-warm">Donate</a>
-                </div>
             </nav>
         </div>
     </header>
@@ -239,7 +236,10 @@
                         <h3 class="program-title">Education & Literacy</h3>
                         <p class="program-desc">Providing scholarships, digital learning centers, classroom kits, and
                             after-school mentorship to ensure children stay in school.</p>
-                        <a href="our-work.html#education" class="program-link">
+                        <div class="sdg-badge-container">
+                            <span class="sdg-badge sdg-4">UN SDG 4: Quality Education</span>
+                        </div>
+                        <a href="our-work.html#education" class="program-link" style="margin-top: 1rem;">
                             Learn more
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -261,7 +261,10 @@
                         <h3 class="program-title">Environmental Care</h3>
                         <p class="program-desc">Native tree plantation drives, plastic-free village campaigns, rainwater
                             harvesting, and community waste management programs.</p>
-                        <a href="our-work.html#environment" class="program-link">
+                        <div class="sdg-badge-container">
+                            <span class="sdg-badge sdg-13">UN SDG 13: Climate Action</span>
+                        </div>
+                        <a href="our-work.html#environment" class="program-link" style="margin-top: 1rem;">
                             Learn more
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -283,7 +286,10 @@
                         <h3 class="program-title">Healthcare Access</h3>
                         <p class="program-desc">Free health checkup camps, maternal nutrition kits, preventive care
                             workshops, and emergency medical assistance in remote areas.</p>
-                        <a href="our-work.html#health" class="program-link">
+                        <div class="sdg-badge-container">
+                            <span class="sdg-badge sdg-3">UN SDG 3: Good Health</span>
+                        </div>
+                        <a href="our-work.html#health" class="program-link" style="margin-top: 1rem;">
                             Learn more
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -305,7 +311,10 @@
                         <h3 class="program-title">Women Empowerment</h3>
                         <p class="program-desc">Tailoring & micro-entrepreneurship training, self-help group linkages,
                             and financial literacy workshops for rural women.</p>
-                        <a href="our-work.html#women" class="program-link">
+                        <div class="sdg-badge-container">
+                            <span class="sdg-badge sdg-5">UN SDG 5: Gender Equality</span>
+                        </div>
+                        <a href="our-work.html#women" class="program-link" style="margin-top: 1rem;">
                             Learn more
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -486,51 +495,6 @@
                             with UN Sustainable Development Goals.</p>
                         <a href="get-involved.html#partner" class="btn btn-outline" style="width: 100%;">Partner With
                             Us</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 8. Trust & Transparency Bar -->
-        <section class="section-trust" id="transparency">
-            <div class="container">
-                <div class="trust-wrapper">
-                    <div class="trust-badges reveal">
-                        <div class="trust-badge-item">
-                            <svg class="trust-badge-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <div>
-                                <div class="trust-badge-title">Section 8 Registered</div>
-                                <div class="trust-badge-sub">Companies Act 2013</div>
-                            </div>
-                        </div>
-
-                        <div class="trust-badge-item">
-                            <svg class="trust-badge-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <div>
-                                <div class="trust-badge-title">80G & 12A Certified</div>
-                                <div class="trust-badge-sub">Tax Exemption Benefits</div>
-                            </div>
-                        </div>
-
-                        <div class="trust-badge-item">
-                            <svg class="trust-badge-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <div>
-                                <div class="trust-badge-title">Annual Audits</div>
-                                <div class="trust-badge-sub">Fully Transparent Reporting</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -751,6 +715,32 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating Quick-Donate Action (Mobile & Tablet) -->
+    <a href="get-involved.html#donate" class="floating-quick-donate" aria-label="Donate Now">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4" />
+        </svg>
+        Donate
+    </a>
+
+    <!-- Universal Lightbox Image Modal -->
+    <div class="lightbox-modal" aria-hidden="true" role="dialog">
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Close image modal">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="lightbox-img-wrapper">
+                <img src="" alt="Field Photo Preview" class="lightbox-img">
+            </div>
+            <div class="lightbox-caption">
+                <h3 class="lightbox-caption-title"></h3>
+                <p class="lightbox-caption-text"></p>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>

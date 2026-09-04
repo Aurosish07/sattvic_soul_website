@@ -2933,3 +2933,482 @@ html, body {
         padding: 0.85rem 0.5rem;
     }
 }
+
+/* ==========================================================================
+   Trust Strip & Institutional Compliance Banner
+   ========================================================================== */
+.trust-strip-banner {
+    background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
+    color: #FFFFFF;
+    padding: 1.25rem 0;
+    border-bottom: 3px solid #F59E0B;
+}
+
+.trust-strip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.trust-badge-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.85rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.trust-badge-item:hover {
+    transform: translateY(-2px);
+    border-color: #F59E0B;
+}
+
+.trust-badge-icon {
+    width: 28px;
+    height: 28px;
+    color: #F59E0B;
+    flex-shrink: 0;
+}
+
+.trust-badge-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.trust-badge-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.trust-badge-sub {
+    font-size: 0.72rem;
+    color: #94A3B8;
+}
+
+/* ==========================================================================
+   Financial Transparency & Expense Allocation Visual Chart
+   ========================================================================== */
+.financial-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 2.25rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E2E8F0;
+    margin-top: 2rem;
+}
+
+.financial-bar-wrapper {
+    margin: 1.75rem 0;
+}
+
+.financial-bar-track {
+    display: flex;
+    height: 28px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #F1F5F9;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.financial-bar-segment {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: width 1s ease-in-out;
+}
+
+.segment-program { background: #1E3A8A; }
+.segment-admin { background: #F59E0B; }
+.segment-fundraising { background: #10B981; }
+
+.financial-legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.dot-program { background: #1E3A8A; }
+.dot-admin { background: #F59E0B; }
+.dot-fundraising { background: #10B981; }
+
+.legend-label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+.legend-value {
+    font-size: 0.8rem;
+    color: #64748B;
+}
+
+/* ==========================================================================
+   UN Sustainable Development Goals (SDG) Badges
+   ========================================================================== */
+.sdg-badge-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.85rem;
+}
+
+.sdg-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.sdg-4 { background: rgba(197, 25, 45, 0.12); color: #C5192D; border: 1px solid rgba(197, 25, 45, 0.25); }
+.sdg-13 { background: rgba(63, 127, 64, 0.12); color: #3F7F40; border: 1px solid rgba(63, 127, 64, 0.25); }
+.sdg-3 { background: rgba(76, 159, 56, 0.12); color: #4C9F38; border: 1px solid rgba(76, 159, 56, 0.25); }
+.sdg-5 { background: rgba(255, 58, 33, 0.12); color: #FF3A21; border: 1px solid rgba(255, 58, 33, 0.25); }
+.sdg-1 { background: rgba(229, 36, 59, 0.12); color: #E5243B; border: 1px solid rgba(229, 36, 59, 0.25); }
+
+/* ==========================================================================
+   Interactive Donation Impact Calculator Widget
+   ========================================================================== */
+.impact-calc-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+    border: 2px solid #E2E8F0;
+}
+
+.impact-calc-card.active {
+    border-color: #F59E0B;
+}
+
+.impact-presets-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.65rem;
+    margin-bottom: 1.25rem;
+}
+
+.calc-preset-btn {
+    padding: 0.75rem 0.5rem;
+    border: 2px solid #E2E8F0;
+    border-radius: 10px;
+    background: #F8FAFC;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1E293B;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.calc-preset-btn:hover,
+.calc-preset-btn.active {
+    border-color: #1E3A8A;
+    background: #1E3A8A;
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2);
+}
+
+.impact-output-box {
+    background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+    border-left: 4px solid #1E3A8A;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+}
+
+.impact-output-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1E3A8A;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+}
+
+.impact-output-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0F172A;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   Copy-to-Clipboard Bank Details Card
+   ========================================================================== */
+.bank-copy-card {
+    background: #F8FAFC;
+    border: 1px dashed #CBD5E1;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.bank-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.bank-row:last-child {
+    border-bottom: none;
+}
+
+.bank-key {
+    font-size: 0.85rem;
+    color: #64748B;
+    font-weight: 500;
+}
+
+.bank-val {
+    font-size: 0.92rem;
+    color: #0F172A;
+    font-weight: 700;
+}
+
+.copy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 6px;
+    background: #1E3A8A;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.copy-btn:hover {
+    background: #1E40AF;
+}
+
+/* ==========================================================================
+   FAQ Accordion Component
+   ========================================================================== */
+.faq-container {
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
+
+.faq-item {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    margin-bottom: 0.85rem;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+.faq-item.active {
+    border-color: #1E3A8A;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    background: none;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0F172A;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    color: #1E3A8A;
+    flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 1.5rem;
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    padding: 0 1.5rem 1.25rem 1.5rem;
+}
+
+/* ==========================================================================
+   Lightbox Image Preview Modal
+   ========================================================================== */
+.lightbox-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.92);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-content {
+    background: #FFFFFF;
+    border-radius: 16px;
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.lightbox-modal.active .lightbox-content {
+    transform: scale(1);
+}
+
+.lightbox-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.7);
+    color: #FFFFFF;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.2s ease;
+}
+
+.lightbox-close-btn:hover {
+    background: #C5192D;
+}
+
+.lightbox-img-wrapper {
+    max-height: 500px;
+    overflow: hidden;
+    background: #0F172A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 500px;
+}
+
+.lightbox-caption {
+    padding: 1.25rem 1.75rem;
+    background: #FFFFFF;
+}
+
+.lightbox-caption-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 0.35rem;
+}
+
+.lightbox-caption-text {
+    font-size: 0.92rem;
+    color: #64748B;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   Floating Quick-Donate Action Button (Mobile)
+   ========================================================================== */
+.floating-quick-donate {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 900;
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding: 0.85rem 1.35rem;
+    border-radius: 30px;
+    box-shadow: 0 8px 24px rgba(245, 158, 11, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-quick-donate:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.5);
+    color: #FFFFFF;
+}
+
+@media (min-width: 1025px) {
+    .floating-quick-donate {
+        display: none;
+    }
+}
